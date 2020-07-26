@@ -1,2 +1,3 @@
-# cloud_logger
-Experimental lightweigth logger
+# Cloud logger
+
+An experimental lightweight logger.
