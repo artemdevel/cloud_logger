@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='cloud_logger',
+    name='cloud_logger2',
     version='2020.7.0',
     author='artemdevel',
     author_email='artem.devel2014@gmail.com',
