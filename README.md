@@ -2,13 +2,13 @@
 
 An experimental lightweight logger. The package was supposed to be called **cloud_logger** but because of a name conflict on PyPi it is called **cloud_logger2** there. After the package is installed all imports still must be done from **cloud_logger** but this can be changed in the future.
 
-This logger is a very simple and lightweigth and supports only output to **stdout** and **stderr**. No extra features or things like coloring are supported. The main purpose of this logger to shoot log messages as fast as possible inside conteinerized applications in clouds.
+This logger is a very simple and lightweigth and supports only output to **stdout** and **stderr**. No extra features or things like coloring are supported. The main purpose of this logger is to shoot log messages as fast as possible inside containerized applications in clouds.
 
-The logger has minimalistic configuration (say no configuration at all) or can be controlled by several environment varables. The supported envirnment variables are:
-- CLOUD_LOG_LEVEL
-- CLOUD_LOG_JSON
-- CLOUD_LOG_FORMAT
-- CLOUD_LOG_JSON_FIELDS
+The logger has a minimalistic configuration (say no configuration at all) or can be controlled by several environment varables. The supported envirnment variables are:
+- CLOUD_LOG_LEVEL - set the logger level. The level can be represented as one of "debug", "info", "warning" or "error" values.
+- CLOUD_LOG_JSON - enable output as JSON.
+- CLOUD_LOG_FORMAT - define string output format, for example, "{level} {created_at} {message}".
+- CLOUD_LOG_JSON_FIELDS - define a list of fields in a JSON output, for example, "level,created_at,message".
 
 The output can be formatted in several styles:
 - structured key=value pairs
